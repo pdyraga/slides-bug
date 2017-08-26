@@ -1,0 +1,9 @@
+<ion-content padding="false">
+  <div ion-fixed>
+    <ion-slides (ionSlideNextEnd)="ionSlideNextEnd($event)">
+      <ion-slide *ngFor="let image of images">
+        <div slider-card [image]="image" (slideNext)="slideNext()"></div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
